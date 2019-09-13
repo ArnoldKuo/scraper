@@ -7,7 +7,6 @@ url = 'https://www.accuweather.com/en/tw/taipei-city/315078/weather-forecast/315
 #soup = BeautifulSoup(res.text, "html5lib")
 
 driver = webdriver.Chrome(executable_path=r'C:\Users\RKUO\chromedriver.exe') # for Windows
-#driver = webdriver.Chrome(executable_path=r'/usr/bin/chromedriver') # for RPi/Linux
 driver.get(url)
 soup = BeautifulSoup(driver.page_source, "html5lib")
 driver.close()
